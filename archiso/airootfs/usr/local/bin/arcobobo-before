@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "#################################"
-echo "Start arcolinux-before"
+echo "Start arcobobo-before"
 echo "#################################"
 
 echo "Populate Core Team keys"
@@ -17,9 +17,9 @@ cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
 
 echo "Changing into our own linux.preset"
 echo "#################################"
-mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
+mv /etc/mkinitcpio.d/arcobobo /etc/mkinitcpio.d/linux.preset
 
 echo "#################################"
-echo "End arcolinux-before"
+echo "End arcobobo-before"
 echo "#################################"
-rm /usr/local/bin/arcolinux-before
+rm /usr/local/bin/arcobobo-before

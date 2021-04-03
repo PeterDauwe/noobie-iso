@@ -1,7 +1,7 @@
 #!/bin/bash
 echo
 echo "#################################"
-echo "Start arcolinux-final"
+echo "Start arcobobo-final"
 echo "#################################"
 
 echo "Permissions of important folders"
@@ -41,14 +41,14 @@ rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
-mv /etc/arcolinux-release /etc/lsb-release
+mv /etc/arcobobo-release /etc/lsb-release
 
 echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
-echo "End arcolinux-final"
+echo "End arcobobo-final"
 echo "#################################"
 rm /usr/local/bin/arcolinux-all-cores
-rm /usr/local/bin/arcolinux-final
+rm /usr/local/bin/arcobobo-final
