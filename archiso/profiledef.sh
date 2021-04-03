@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # shellcheck disable=SC2034
 
 desktop="i3"
@@ -6,7 +6,7 @@ date_mybuild=$(date +%y)-$(date +%m)-$(date +%d)
 arcolinuxVersion=$date_mybuild
 
 iso_name="arcobobo-i3"
-isoLabel='arcobobo-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+isoLabel='arcobobbo-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
 iso_version=$date_mybuild
@@ -14,9 +14,8 @@ install_dir=arch
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
 pacman_conf="pacman.conf"
-airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
-#airootfs_image_tool_options=('-comp' 'xz')
+#airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
+airootfs_image_tool_options=('-comp' 'xz')
 #airootfs_image_tool_options=('-comp' 'zstd' '-Xcompression-level' '22')
 #airootfs_image_tool_options=('-comp' 'zstd')
 file_permissions=(
