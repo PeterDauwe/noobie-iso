@@ -26,7 +26,10 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
-  ["/usr/local/bin/arcolinux-all-cores"]="0:0:755"
-  ["/usr/local/bin/arcobobo-before"]="0:0:755"
+  ["/usr/local/bin/arcobobo-all-cores"]="0:0:755"
   ["/usr/local/bin/arcobobo-final"]="0:0:755"
+  ["/usr/local/bin/arcobobo-skel"]="0:0:755"
+  ["/usr/local/bin/arcobobo-remove-nvidia"]="0:0:755"
+  ["/usr/local/bin/arcobobo-displaymanager-check"]="0:0:755"
+  ["/usr/local/bin/arcobobo-before"]="0:0:755"
 )
